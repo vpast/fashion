@@ -396,6 +396,12 @@ div.sidebar_content .post_dates {
        flex-wrap: wrap;
    }
 
+   .wide_post {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+
    .sidebar_placement {
        display: flex;
        flex-wrap: wrap;
@@ -559,8 +565,16 @@ div.sidebar_content .post_dates {
         justify-content: center;
     }
 
+    .sidebar_block_placement {
+        width: 100%;
+    }
+
     .sidebar_block {
         width: 100%;
+    }
+
+    .sidebar_content {
+        width: auto;
     }
 
     .second_sidebar_block .sidebar_titles {
