@@ -37,22 +37,19 @@ body {
       justify-content: space-around;
   list-style-type: none;
   font-weight: 400;
+  padding-top: 8px;
 }
 
-li a {
+.nav_ul a {
   color: #171717;
   z-index: 0;
   position: relative;
   padding: 10px 10px;
 }
 
-a:hover, a:active {
+.nav_ul a:hover, .nav_ul a:active {
   text-decoration: none;
   color: #171717;
-}
-
-ul.nav_ul {
-  padding-top: 8px;
 }
 
 ul.topBotomBordersOut li a:before, ul.topBotomBordersOut li a:after {
@@ -344,9 +341,13 @@ div.sidebar_content .post_dates {
 }
 
 .third_sidebar_block a {
+  color: #171717;
   padding-left: 0;
   border-bottom: #e4e4e4 1px solid;
   width: 250px;
+  text-decoration: none;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .third_sidebar_block li:last-child a {

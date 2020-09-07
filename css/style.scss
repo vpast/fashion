@@ -1,82 +1,6 @@
-body {
-    font-family: "PT serif";
-}
-
-.my_container {
-    margin-left: 5rem;
-    margin-right: 5rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-
-.hero_link_decoration {
-    font-size: 25px;
-    color: #171717;
-    font-weight: 700;
-}
-
-.nav_content {
-    display: flex;
-    justify-content: space-between;
-}
-
-.home_link_decoration {
-    color: #d7bf92;
-}
-
-.nav_ul {
-    width: 500px;
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-    font-weight: 400;
-}
-
-li a {
-    color: #171717;
-    z-index: 0;
-    position: relative;
-    padding: 10px 10px;
-}
-
-a:hover, a:active {
-    text-decoration: none;
-    color: #171717;
-}
-
-ul.nav_ul {
-    padding-top: 8px;
-}
-
-ul.topBotomBordersOut li a:before, ul.topBotomBordersOut li a:after
-{
-    position: absolute;
-    left: 0px;
-    width: 100%;
-    height: 2px;
-    background: #171717;
-    content: "";
-    opacity: 0;
-    transition: all 0.3s;
-}
-
-ul.topBotomBordersOut li a:before
-{
-    top: 0px;
-    transform: translateY(10px);
-}
-
-ul.topBotomBordersOut li a:after
-{
-    bottom: 0px;
-    transform: translateY(-10px);
-}
-
-ul.topBotomBordersOut li a:hover:before, ul.topBotomBordersOut li a:hover:after
-{
-    opacity: 1;
-    transform: translateY(0px);
-}
+@import "./_varibales.scss";
+@import "./_global.scss";
+@import "./_header.scss";
 
 .background_img {
     background-image: url(../img/background.png);
@@ -110,7 +34,7 @@ ul.topBotomBordersOut li a:hover:before, ul.topBotomBordersOut li a:hover:after
 }
 
 main {
-    color: #171717;
+    color: $dark-color;
 }
 
 .content_wrapping {
@@ -280,9 +204,13 @@ div.sidebar_content .post_dates {
 }
 
 .third_sidebar_block a {
+    color: $dark-color;
     padding-left: 0;
     border-bottom: #e4e4e4 1px solid;
     width: 250px;
+    text-decoration: none;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
 .third_sidebar_block li:last-child a {
@@ -360,12 +288,12 @@ div.sidebar_content .post_dates {
     line-height: 16px;
     font-weight: 400;
     text-decoration: none;
-    color: #171717;
+    color: $dark-color;
     padding: 16px 16px;
 }
 
 .pagination a:hover {
-    color: #171717;
+    color: $dark-color;
     background-color: #ddd;
 }
 
